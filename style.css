@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    box-sizing:border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: yellow;
+    padding: 10px;
+    border-style: solid;
+    border-color: yellow;
+    border-width: 1em;
+    border-radius: 5px;
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+.btn{
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+.btn:hover{
+    border-color: black;
+}
